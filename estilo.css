@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    font-size: 62.5%;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.iconos{
+    width: 6rem;
+    height: 6rem;
+    background-color: white;
+    position: absolute;
+    top: 7rem;
+    right: 7rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.iconos i{
+    font-size: 4rem;
+    color: #777;
+}
+
+.tarjeta{
+    width: 48rem;
+    height: 30rem;
+    border-radius: 2rem;
+    position: relative;
+    display: flex;
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
+
+}
+
+.imagenFondo{
+    width: 35rem;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+}
+.tarjeta-chip{
+    width: 6rem;
+}
+
+.container.oscuro{
+    background-color: #262626;
+}
+
+.container.oscuro.iconos{
+    background-color: #464646;
+}
+
+.tipo-tarjeta{
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.container.oscuro .icono i {
+    color: #ddd;
+  }
+
+.contenedor-datos{
+    width: 70%;
+    height: 100%;
+    padding: 1rem 0 1rem 3rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color:#777 ;
+    z-index: 10;
+
+}
+
+.container.oscuro .tarjeta {
+    background-color: #353535;
+  }
+
+.container.oscuro .contenedor-datos {
+    color: #ccc;
+  }
+.numero-tarjeta{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.fecha-tarjeta{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.beneficiario-tarjeta{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contenedor-logo {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 2rem 2rem;
+    z-index: 10;
+  }
+
+.circulo-rojo,.circulo-naranja{
+    width: 6rem;
+    height: 6rem;
+  
+    border-radius: 50%;
+
+}
+
+.circulo-rojo {
+    background-color: #eb001b;
+  }
+  
+  .circulo-naranja {
+    background-color: #ff5f00;
+    margin-left: -2rem;
+    opacity: 0.7;
+  }
